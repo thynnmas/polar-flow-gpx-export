@@ -59,7 +59,7 @@ def printTimeStamp(ds):
 													 ts.hour, ts.minute, ts.second, ds % 1000 )
 
 bounds = [[ 180.0, 180.0],
-		  [-180.0,-180.0]]
+	  [-180.0,-180.0]]
 for sample in data:
 	bounds[0][0] = min(bounds[0][0],sample[PART_INDEX_LAT])
 	bounds[0][1] = min(bounds[0][1],sample[PART_INDEX_LON])
@@ -77,19 +77,19 @@ out = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 		</metadata>
 	<trk>
 		<trkseg>''' % ( NAME,
-						printTimeStamp(TIME),
-						bounds[1][1],
-						bounds[1][0],
-						bounds[0][1],
-						bounds[0][0] )
+				printTimeStamp(TIME),
+				bounds[1][1],
+				bounds[1][0],
+				bounds[0][1],
+				bounds[0][0] )
 
 for sample in data:
 	out += '''
 			<trkpt lon="%3.14f" lat="%3.14f">
 				<time>%s</time>
 			</trkpt>''' % ( sample[PART_INDEX_LON],
-							sample[PART_INDEX_LAT],
-							printTimeStamp(sample[PART_INDEX_TIME]) )
+					sample[PART_INDEX_LAT],
+					printTimeStamp(sample[PART_INDEX_TIME]) )
 
 out += '''
 		</trkseg>
