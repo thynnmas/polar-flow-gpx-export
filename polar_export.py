@@ -46,9 +46,8 @@ for part in fin_data_str.split('],['):
 	lon_str = parts[PART_INDEX_LON][6:]
 	lon_str_strip = lon_str[:len(lon_str)-1]
 	data.append( [	float(parts[PART_INDEX_LAT][7:]),
-					float(lon_str_strip),
-					long(parts[PART_INDEX_TIME])
-				 ] )
+			float(lon_str_strip),
+			long(parts[PART_INDEX_TIME]) ] )
 
 NAME = 'Runner' # <-- This is where you insert your name!
 TIME = data[0][PART_INDEX_TIME]
