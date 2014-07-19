@@ -8,7 +8,7 @@ It *must* be noted that this just parses the HTML/JS of the webapp, and does so 
 
 ## Instructions
 1. Install Python. You want Python 2, whichever the newest version is for your architecture (at time of writing that is 2.7.8).
-2. In the script, find the line that says NAME = 'Runner' (line 53) and replace Runner with your name.
+2. In the script, find the line that says `NAME = 'Runner'` (line 53) and replace Runner with your name.
 3. In Polar Flow, navigate to the excercise you want to export.
 
 Now you have two alternatives:
