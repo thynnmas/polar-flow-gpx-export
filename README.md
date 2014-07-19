@@ -18,4 +18,4 @@ Now you have two alternatives:
 * The hard way:
  1. Press `Ctrl+U, Ctrl+S` (in firefox and chrome at least) to download the source of the page.
  2. Open the command line (`CTRL+R -> cmd -> enter`) and run `python polar_export.py [downloaded file]`. If python is not found (meaning python is not in your environment variables),find python.exe and use the full path, typically (Windows, x86) `"C:\Program Files\Python27\python.exe" [qualified path to script] [qualified path to file]`.
- 3.The GPX file is now in the folder the downloaded file is in with teh same name (but gpx file extension).
+ 3. The GPX file is now in the folder the downloaded file is in with teh same name (but gpx file extension).
